@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+   <!-- <include layout="@layout/application_toolbar"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Bluetooth is OFF, Click to Enable"
+        android:textColor="@color/white"
+        android:id="@+id/txtBluetoothStatus"
+        android:visibility="gone"
+        android:background="@color/orange">
+
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:textSize="@dimen/medium_text"
+        android:text="Add a device to receive\nnotification updates"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:background="@color/white">
+
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:hint="Device Name"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ems="8"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:id="@+id/editDeviceName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/very_very_small"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:id="@+id/txtData"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_weight="0.15">
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:text="Scann For Device"
+            android:textColor="@color/white"
+            android:id="@+id/btnScann"
+            android:textSize="@dimen/medium_text"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/progressBar" />
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:text="Save and Continue"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:id="@+id/btnProceed"
+            android:textSize="@dimen/medium_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>
