@@ -25,7 +25,7 @@ public class SplashActivity extends Activity {
 
             public void run() {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(SplashActivity.this, ScannBleActivity.class);
+                Intent i = new Intent(SplashActivity.this, RadarScannActivity.class);
                 startActivity(i);
                 finish();
             }
